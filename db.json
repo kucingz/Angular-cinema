@@ -1,0 +1,34 @@
+{
+  "movielist": [
+    {
+      "id": "1",
+      "title": "Shrek",
+      "img": "",
+      "duration": 120,
+      "description": " FAJNY FIADLDASDSADSADSADSADSAAAAAAAAAA"
+    },
+    {
+      "id": "2",
+      "title": "Shrek 22",
+      "img": "",
+      "duration": 169,
+      "description": " FAJNY FIADLDASDSADSADSADSADSAAAAAAAAAA"
+    }
+  ],
+  "filmshows": [
+    {
+      "id": 1,
+      "movie": "Shrek",
+      "seats": 22,
+      "room": 2,
+      "date": "12.12.2022 18:30"
+    },
+    {
+      "id": 2,
+      "movie": "Shrek2",
+      "room": 3,
+      "seats": 25,
+      "date": "12.12.2022 18:30"
+    }
+  ]
+}
