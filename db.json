@@ -1,34 +1,89 @@
 {
   "movielist": [
     {
-      "id": "1",
-      "title": "Shrek",
-      "img": "",
-      "duration": 120,
-      "description": " FAJNY FIADLDASDSADSADSADSADSAAAAAAAAAA"
+      "title": "dsfdsfdsf",
+      "duration": "fdsfdsfd",
+      "image": "https://i.ytimg.com/vi/5qmVFFAuDTY/maxresdefault.jpg",
+      "description": "23423",
+      "id": "ErQPgQs"
     },
     {
-      "id": "2",
-      "title": "Shrek 22",
-      "img": "",
-      "duration": 169,
-      "description": " FAJNY FIADLDASDSADSADSADSADSAAAAAAAAAA"
+      "title": "saddsdsadsadsa",
+      "duration": "sdsdsddddddd",
+      "image": "https://i.ytimg.com/vi/5qmVFFAuDTY/maxresdefault.jpg",
+      "description": "123",
+      "id": "Ui7iy4B"
+    },
+    {
+      "title": "dsadsadsa",
+      "duration": "dsadsada",
+      "image": "https://pbs.twimg.com/profile_images/1293616069853220864/HWKU1SiQ_400x400.jpg",
+      "description": "2137",
+      "id": "BvaJydE"
+    },
+    {
+      "title": "dsadsa",
+      "image": "https://oneworldinformation.com/wp-content/uploads/2021/07/Hasbulla-Magomedov.jpg",
+      "duration": "2137",
+      "description": "dsadsadsadsa",
+      "id": "EPU_gXT"
+    },
+    {
+      "title": "fdsfsdfs",
+      "image": "https://i1.sndcdn.com/artworks-q9ZQXzf7QmugI0aP-6TuE6w-t500x500.jpg",
+      "duration": "222",
+      "description": "XDDDDDD ALE FILM ",
+      "id": "VPDgg5z"
+    }
+  ],
+  "rooms": [
+    {
+      "room": "dsadasdsa",
+      "seats": 36,
+      "reservedSeats": [],
+      "id": 4
+    },
+    {
+      "room": "ROOM NR 1 XD",
+      "seats": 222,
+      "reservedSeats": [],
+      "id": 5
     }
   ],
   "filmshows": [
     {
       "id": 1,
-      "movie": "Shrek",
-      "seats": 22,
-      "room": 2,
-      "date": "12.12.2022 18:30"
+      "movie": {
+        "title": "saddsdsadsadsa",
+        "duration": "sdsdsddddddd",
+        "image": "https://i.ytimg.com/vi/5qmVFFAuDTY/maxresdefault.jpg",
+        "description": "123",
+        "id": "Ui7iy4B"
+      },
+      "room": {
+        "room": "dsadasdsa",
+        "seats": 36,
+        "reservedSeats": [],
+        "id": 4
+      },
+      "date": "2137-03-12T13:24:27+00:00"
     },
     {
       "id": 2,
-      "movie": "Shrek2",
-      "room": 3,
-      "seats": 25,
-      "date": "12.12.2022 18:30"
+      "movie": {
+        "title": "fdsfsdfs",
+        "image": "https://i1.sndcdn.com/artworks-q9ZQXzf7QmugI0aP-6TuE6w-t500x500.jpg",
+        "duration": "222",
+        "description": "XDDDDDD ALE FILM ",
+        "id": "VPDgg5z"
+      },
+      "room": {
+        "room": "ROOM NR 1 XD",
+        "seats": 222,
+        "reservedSeats": [],
+        "id": 5
+      },
+      "date": "2022-03-12T13:37:27+00:00"
     }
   ]
 }

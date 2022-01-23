@@ -1,16 +1,15 @@
 <mat-card class="example-card">
   <mat-card-header>
+    <i
+      class="bi bi-trash"
+      (click)="onDelete(movie)"
+      style="cursor: pointer"
+    ></i>
     <mat-card-title>{{ movie.title }}</mat-card-title>
     <mat-card-subtitle>{{ movie.duration }}</mat-card-subtitle>
   </mat-card-header>
-  <img
-    mat-card-image
-    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-    alt="Photo of a Shiba Inu"
-  />
+  <img mat-card-image src="{{ movie.image }}" alt="Photo of a Shiba Inu" />
   <mat-card-content>
-    <p>
-      {{ movie.description }}
-    </p>
+    {{ movie.description }}
   </mat-card-content>
 </mat-card>

@@ -3,6 +3,7 @@
     <app-movie
       *ngFor="let movie of movielist"
       [movie]="movie"
+      (onDeleteMovie)="deleteMovie(movie)"
       class="col-4"
     ></app-movie>
   </div>

@@ -1,0 +1,36 @@
+<form [formGroup]="roomForm" (ngSubmit)="onRoomAdd()">
+  <div class="form-group">
+    <label for="room">Room name</label>
+    <input
+      type="text"
+      name="room"
+      formControlName="room"
+      class="form-control"
+      id="room"
+      placeholder="Enter room name"
+    />
+    <span style="color: red" *ngIf="room && room.invalid && room.touched"
+      >This field is required</span
+    >
+  </div>
+  <div class="form-group">
+    <label for="seats">Number of seats</label>
+    <input
+      input
+      required
+      type="number"
+      name="seats"
+      formControlName="seats"
+      class="form-control"
+      id="seats"
+      placeholder="Seats"
+    />
+    <span style="color: red" *ngIf="seats && seats.invalid && seats.touched"
+      >This field is required and it is accepting only number</span
+    >
+  </div>
+
+  <button type="submit" class="btn btn-danger" style="margin-top: 30px">
+    Submit
+  </button>
+</form>

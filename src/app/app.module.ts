@@ -10,7 +10,11 @@ import { A11yModule } from '@angular/cdk/a11y';
 import { BidiModule } from '@angular/cdk/bidi';
 import { ObserversModule } from '@angular/cdk/observers';
 import { PortalModule } from '@angular/cdk/portal';
-import { MatCommonModule, MatRippleModule } from '@angular/material/core';
+import {
+  MatCommonModule,
+  MatNativeDateModule,
+  MatRippleModule,
+} from '@angular/material/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -42,14 +46,41 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { MovieComponent } from './movie/movie.component';
 import { MovielistComponent } from './movielist/movielist.component';
-
 import { HttpClientModule } from '@angular/common/http';
+import { MovieAddComponent } from './movie-add/movie-add.component';
+import {
+  NgxMatDateAdapter,
+  NgxMatDatetimePickerModule,
+  NgxMatTimepickerModule,
+} from '@angular-material-components/datetime-picker';
+import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddFilmShowComponent } from './add-film-show/add-film-show.component';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+import { AddRoomComponent } from './add-room/add-room.component';
+import { FilmShowsComponent } from './film-shows/film-shows.component';
+import { FilmShowComponent } from './film-show/film-show.component';
+import { BuyTicketComponent } from './buy-ticket/buy-ticket.component';
+const appRoutes: Routes = [
+  { path: '', component: MovielistComponent },
+  { path: 'movieadd', component: MovieAddComponent },
+  { path: 'filmshowadd', component: AddFilmShowComponent },
+  { path: 'roomadd', component: AddRoomComponent },
+  { path: 'filmshows', component: FilmShowsComponent },
+  { path: 'buy-ticket/:id', component: BuyTicketComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MovieComponent,
     MovielistComponent,
+    MovieAddComponent,
+    AddFilmShowComponent,
+    AddRoomComponent,
+    FilmShowsComponent,
+    FilmShowComponent,
+    BuyTicketComponent,
   ],
   imports: [
     BrowserModule,
@@ -90,6 +121,13 @@ import { HttpClientModule } from '@angular/common/http';
     MatCommonModule,
     ObserversModule,
     HttpClientModule,
+    RouterModule.forRoot(appRoutes, { enableTracing: true }),
+    FormsModule,
+    ReactiveFormsModule,
+    MatNativeDateModule,
+    NgxMatDatetimePickerModule,
+    NgxMatTimepickerModule,
+    NgxMaterialTimepickerModule,
   ],
   exports: [
     BrowserModule,

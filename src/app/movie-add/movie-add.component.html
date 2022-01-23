@@ -1,0 +1,73 @@
+<form [formGroup]="movieForm" (ngSubmit)="onAddMovie()">
+  <div class="form-group">
+    <label for="title">Movie title</label>
+    <input
+      type="text"
+      name="title"
+      formControlName="title"
+      class="form-control"
+      id="title"
+      placeholder="Enter movie name"
+    />
+    <span style="color: red" *ngIf="title && title.invalid && title.touched"
+      >This field is required</span
+    >
+  </div>
+  <div class="form-group">
+    <label for="image">Image (url)</label>
+    <input
+      name="image"
+      type="text"
+      formControlName="image"
+      class="form-control"
+      id="image"
+      placeholder="Image url"
+    />
+    <span style="color: red" *ngIf="image && image.invalid && image.touched"
+      >This field is required</span
+    >
+  </div>
+  <div class="form-group">
+    <label for="duration">Duration</label>
+    <input
+      input
+      required
+      type="number"
+      name="duration"
+      type="nubmer"
+      formControlName="duration"
+      class="form-control"
+      id="duration"
+      placeholder="Duration"
+    />
+    <span
+      style="color: red"
+      *ngIf="duration && duration.invalid && duration.touched"
+      >This field is required and it is accepting only number</span
+    >
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input
+      name="description"
+      type="text"
+      formControlName="description"
+      class="form-control"
+      id="description"
+      placeholder="Description"
+    />
+    <span
+      style="color: red"
+      *ngIf="description && description.invalid && description.touched"
+      >This field is required</span
+    >
+  </div>
+  <button
+    [disabled]="movieForm.invalid"
+    type="submit"
+    class="btn btn-danger"
+    style="margin-top: 30px"
+  >
+    Submit
+  </button>
+</form>
