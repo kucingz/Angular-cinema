@@ -1,5 +1,33 @@
-<mat-chip-list aria-label="Fish selection">
-  <mat-chip *ngFor="let a of fakeArray; let index = index">{{
-    index
-  }}</mat-chip>
-</mat-chip-list>
+<div class="container" style="justify-content: center; display: flex">
+  <div class="row" style="justify-content: center" class="col-5">
+    <h1 style="text-align: center">Pick your seat</h1>
+    <div *ngFor="let filmshow of filmshows" style="justify-content: center">
+      <span
+        *ngIf="filmshow.id.toString() == myParam[0]"
+        style="justify-content: center"
+      >
+        <mat-chip-list aria-label="Fish selection">
+          <mat-chip *ngFor="let a of fakeArray; let index = index">
+            <span
+              *ngIf="
+                filmshow.room.reservedSeats.includes(index);
+                then thenBlock;
+                else elseBlock
+              "
+            ></span>
+            <ng-template #thenBlock
+              ><span style="color: red">{{ index }}</span></ng-template
+            >
+            <ng-template #elseBlock
+              ><span
+                style="cursor: pointer"
+                (click)="openDialog(index, filmshow)"
+                >{{ index }}</span
+              ></ng-template
+            >
+          </mat-chip>
+        </mat-chip-list>
+      </span>
+    </div>
+  </div>
+</div>

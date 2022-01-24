@@ -61,13 +61,14 @@ import { AddRoomComponent } from './add-room/add-room.component';
 import { FilmShowsComponent } from './film-shows/film-shows.component';
 import { FilmShowComponent } from './film-show/film-show.component';
 import { BuyTicketComponent } from './buy-ticket/buy-ticket.component';
+import { BuyTicketFormComponent } from './buy-ticket-form/buy-ticket-form.component';
 const appRoutes: Routes = [
   { path: '', component: MovielistComponent },
   { path: 'movieadd', component: MovieAddComponent },
   { path: 'filmshowadd', component: AddFilmShowComponent },
   { path: 'roomadd', component: AddRoomComponent },
   { path: 'filmshows', component: FilmShowsComponent },
-  { path: 'buy-ticket/:id', component: BuyTicketComponent },
+  { path: 'buy-ticket/:filmshowId', component: BuyTicketComponent },
 ];
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ const appRoutes: Routes = [
     FilmShowsComponent,
     FilmShowComponent,
     BuyTicketComponent,
+    BuyTicketFormComponent,
   ],
   imports: [
     BrowserModule,

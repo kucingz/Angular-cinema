@@ -17,6 +17,13 @@ export class FilmshowService {
 
   constructor(private http: HttpClient) {}
 
+  reservePlace(filmshow: FilmShow): Observable<FilmShow> {
+    return this.http.put<FilmShow>(
+      `${this.apiUrl}/${filmshow.id}`,
+      filmshow,
+      httpOptions
+    );
+  }
   getFilmShows(): Observable<FilmShow[]> {
     return this.http.get<FilmShow[]>(this.apiUrl);
   }
