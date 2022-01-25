@@ -1,39 +1,25 @@
 {
   "movielist": [
     {
-      "title": "dsfdsfdsf",
-      "duration": "fdsfdsfd",
-      "image": "https://i.ytimg.com/vi/5qmVFFAuDTY/maxresdefault.jpg",
-      "description": "23423",
-      "id": "ErQPgQs"
+      "title": "Karol człowiek który został papieżem",
+      "image": "https://repertuary.pl/images/dbimages/fi_3762_0_g6.jpg",
+      "duration": "420",
+      "description": "Karol. Człowiek, który został papieżem – film fabularny w reżyserii Giacoma Battiata z 2005 roku produkcji polsko-włosko-francusko-niemiecko-kanadyjskiej. Opowiada historię Karola Wojtyły od czasów młodości do momentu wybrania go na papieża.",
+      "id": 1
     },
     {
-      "title": "saddsdsadsadsa",
-      "duration": "sdsdsddddddd",
-      "image": "https://i.ytimg.com/vi/5qmVFFAuDTY/maxresdefault.jpg",
-      "description": "123",
-      "id": "Ui7iy4B"
+      "title": "chłopiec w pasiastej piżamie",
+      "image": "https://static.deon.pl/storage/image/core_files/2016/2/16/b40183db035ef86280bc5bb6187bff48/png/deon/articles-thumb-xlarge-breakpoint-default/film-na-weekend-chlopiec-w-pasiastej-pizamie.png",
+      "duration": "240",
+      "description": "Chłopiec w pasiastej piżamie – amerykańsko-brytyjski film z 2008 roku. Reżyserem i scenarzystą filmu jest Mark Herman. Film jest adaptacją książki Johna Boyne pod tym samym tytułem, wydanej w 2006 roku. Serwis Rotten Tomatoes przyznał mu wynik 63%. Film kręcono na Węgrzech od 29 kwietnia do lipca 2007 roku.",
+      "id": 2
     },
     {
-      "title": "dsadsadsa",
-      "duration": "dsadsada",
-      "image": "https://pbs.twimg.com/profile_images/1293616069853220864/HWKU1SiQ_400x400.jpg",
-      "description": "2137",
-      "id": "BvaJydE"
-    },
-    {
-      "title": "dsadsa",
-      "image": "https://oneworldinformation.com/wp-content/uploads/2021/07/Hasbulla-Magomedov.jpg",
-      "duration": "2137",
-      "description": "dsadsadsadsa",
-      "id": "EPU_gXT"
-    },
-    {
-      "title": "fdsfsdfs",
-      "image": "https://i1.sndcdn.com/artworks-q9ZQXzf7QmugI0aP-6TuE6w-t500x500.jpg",
-      "duration": "222",
-      "description": "XDDDDDD ALE FILM ",
-      "id": "VPDgg5z"
+      "title": "Jojo Rabbit",
+      "image": "https://image.ceneostatic.pl/data/products/104604923/i-jojo-rabbit-dvd.jpg",
+      "duration": "120",
+      "description": "Jojo Rabbit – amerykańsko-nowozelandzki film z 2019, będący satyryczną czarną komedią. Został napisany i wyreżyserowany przez nowozelandzkiego twórcę, Taikę Waititiego. Jest adaptacją powieści autorstwa Christine Leunens pod tytułem Caging Skies.",
+      "id": 3
     }
   ],
   "rooms": [
@@ -48,6 +34,18 @@
       "seats": 222,
       "reservedSeats": [],
       "id": 5
+    },
+    {
+      "room": "da",
+      "seats": 12,
+      "reservedSeats": [],
+      "id": 6
+    },
+    {
+      "room": "Sala Panoramiczna 1",
+      "seats": 120,
+      "reservedSeats": [],
+      "id": 7
     }
   ],
   "filmshows": [
