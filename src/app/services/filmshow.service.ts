@@ -27,7 +27,7 @@ export class FilmshowService {
   getFilmShows(): Observable<FilmShow[]> {
     return this.http.get<FilmShow[]>(this.apiUrl);
   }
-
+  // -
   addFilmShows(filmshow: FilmShow): Observable<FilmShow> {
     return this.http.post<FilmShow>(this.apiUrl, filmshow, httpOptions);
   }
