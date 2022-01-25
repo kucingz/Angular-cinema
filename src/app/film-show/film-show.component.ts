@@ -16,4 +16,14 @@ export class FilmShowComponent implements OnInit {
     console.log(filmshowId);
     this.router.navigate(['/buy-ticket', filmshowId + '/' + seats]);
   }
+  today(filmshow: FilmShow) {
+    let today = new Date();
+    console.log();
+    if (
+      filmshow.date.split('-')[2] === today.getDate().toString() &&
+      filmshow.date.split('-')[1] === (today.getMonth() + 1).toString()
+    ) {
+      return true;
+    } else return false;
+  }
 }

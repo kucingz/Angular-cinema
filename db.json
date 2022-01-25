@@ -61,10 +61,10 @@
       "room": {
         "room": "dsadasdsa",
         "seats": 36,
-        "reservedSeats": [],
+        "reservedSeats": [12, 34, 27, 18, 29, 9],
         "id": 4
       },
-      "date": "2137-03-12T13:24:27+00:00"
+      "date": "2137-3-12-13:25"
     },
     {
       "id": 2,
@@ -78,10 +78,27 @@
       "room": {
         "room": "ROOM NR 1 XD",
         "seats": 222,
-        "reservedSeats": [],
+        "reservedSeats": [1, 2, 3],
         "id": 5
       },
-      "date": "2022-03-12T13:37:27+00:00"
+      "date": "2022-3-12-13:40"
+    },
+    {
+      "id": 3,
+      "movie": {
+        "title": "SEANS 3",
+        "image": "https://oneworldinformation.com/wp-content/uploads/2021/07/Hasbulla-Magomedov.jpg",
+        "duration": "2137",
+        "description": "SIEMA ",
+        "id": "VPDgg5z"
+      },
+      "room": {
+        "room": "ROOM NR 2",
+        "seats": 20,
+        "reservedSeats": [],
+        "id": 6
+      },
+      "date": "2022-1-24-21:37"
     }
   ]
 }

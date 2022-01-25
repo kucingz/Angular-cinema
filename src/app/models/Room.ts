@@ -4,7 +4,7 @@ export class RoomModel {
   constructor(
     public room: string,
     public seats: number,
-    public reservedSeats: [],
+    public reservedSeats: number[],
     id?: number
   ) {
     if (id) this.id = id;
@@ -23,7 +23,7 @@ export class RoomModel {
     return this.seats;
   }
 
-  get _reservedSeats(): [] {
+  get _reservedSeats(): number[] {
     return this.reservedSeats;
   }
 
@@ -38,7 +38,7 @@ export class RoomModel {
     this.seats = _seats;
   }
 
-  set _reservedSeats(_reservedSeats: []) {
+  set _reservedSeats(_reservedSeats: number[]) {
     this.reservedSeats = _reservedSeats;
   }
 }
